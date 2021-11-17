@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 300px;
+    color: gold;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background: chocolate;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.header-wrap {
+    height: 760px;
+    width: 100%;
+    background: slategrey;
+}
+
+.content-wrapper {
+    background: crimson;
+    height: 1000px;
+}
+
+.content-wrapper main p {
+    text-align: center;
+    margin: 0;
+}

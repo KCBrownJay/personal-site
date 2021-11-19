@@ -5,11 +5,9 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
 }
 
 header {
-    text-align: center;
     height: 50vh;
     display: flex;
     align-items: center;
@@ -19,7 +17,7 @@ header {
 
 header h1 {
     color: #ffe8d6;
-    font-size: 4vw;
+    font-size: 6vh;
 }
 
 nav {
@@ -27,6 +25,8 @@ nav {
     position: relative;
     width: 100%;
     top: 0;
+    transition: all 0.5s;
+    z-index: 1;
 }
 
 nav ul {
@@ -44,10 +44,25 @@ nav li {
     align-items: center;
 }
 
+li.return {
+    max-width: 0;
+    overflow: hidden;
+    background: white;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+li.return a {
+    color: black;
+}
+
 nav a {
     text-decoration: none;
-    font-size: 24px;
-    padding: 20px;
+    font-size: 2vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
     color: white;
     text-transform: uppercase;
     display: inline-block;
@@ -55,6 +70,15 @@ nav a {
 
 nav a:hover {
     color: gold;
+}
+
+body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+
+.fixed-nav li.return {
+    max-width: 500px;
 }
 
 .content-wrapper {

@@ -2,6 +2,8 @@
 Personal website for projects and personal brand
 
 # color-palette
+Color scheme for the website
+
  -#b98b73
  -#cb997e
  -#ddbea9
